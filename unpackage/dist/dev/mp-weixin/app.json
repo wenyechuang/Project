@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/waybill/waybill",
+    "pages/project/project"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#0982FA",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#0982FA",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/static/logo.png",
+        "selectedIconPath": "/static/logo.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/project/project",
+        "iconPath": "/static/logo.png",
+        "selectedIconPath": "/static/logo.png",
+        "text": "运输计划"
+      },
+      {
+        "pagePath": "pages/waybill/waybill",
+        "iconPath": "/static/logo.png",
+        "selectedIconPath": "/static/logo.png",
+        "text": "运单"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "iconPath": "/static/logo.png",
+        "selectedIconPath": "/static/logo.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "permission": {},
+  "usingComponents": {}
+}

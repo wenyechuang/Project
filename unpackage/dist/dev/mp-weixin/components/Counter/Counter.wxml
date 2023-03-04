@@ -1,0 +1,1 @@
+<view><button size="mini" data-event-opts="{{[['tap',[['handleCount',[-1]]]]]}}" bindtap="__e">-</button>{{''+count+''}}<button size="mini" type="default" data-event-opts="{{[['tap',[['handleCount',[1]]]]]}}" bindtap="__e">+</button></view>
