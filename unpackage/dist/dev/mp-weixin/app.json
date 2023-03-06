@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/transportationPlan/transportationPlan",
     "pages/Transport/Transport",
     "pages/index/index"
   ],
