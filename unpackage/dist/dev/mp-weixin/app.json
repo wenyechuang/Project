@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/Transport/Transport",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff"
+  },
+  "usingComponents": {}
+}
