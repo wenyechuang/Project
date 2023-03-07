@@ -19,6 +19,31 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		
+		//运输计划页面
+		{
+			"path": "pages/plan/plan",
+			"style": {
+				"navigationBarTitleText": "运输计划"
+			}
+		},
+		//指派页面
+		{
+			"path": "pages/appoint/appoint",
+			"style": {
+				"navigationBarTitleText": "指派",
+				"enablePullDownRefresh": false
+			}
+
+		}, 
+		//分享页面
+		{
+			"path": "pages/share/share",
+			"style": {
+				"navigationBarTitleText": "分享",
+				"enablePullDownRefresh": false
+			}
 		}
 	    
     ],
