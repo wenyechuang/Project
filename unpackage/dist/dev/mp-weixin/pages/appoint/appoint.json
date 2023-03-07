@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "指派",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "inputs": "/components/inputs/inputs",
+    "card": "/components/card/card"
+  }
+}

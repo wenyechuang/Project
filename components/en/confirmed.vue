@@ -1,0 +1,50 @@
+<template>
+	<view>
+		
+	</view>
+</template>
+
+<script>
+	export default{
+		data(){
+		},
+		methods:{
+		}
+	}
+</script>
+
+<style>
+* {
+		background-color: #EBF1FF;
+	}
+
+	.all {
+		display: flex;
+		height: 88rpx;
+		width: 690rpx;
+		margin-left: 30rpx;
+		margin-top: 20rpx;
+		// border: 1px solid red;
+		background-color: #EBF1FF;
+	}
+
+	.complete {
+		height: 88rpx;
+		width: 157rpx;
+		line-height: 88rpx;
+		text-align: center;
+		font-size: 26rpx;
+		color: white;
+	}
+
+	.ture {
+		height: 88rpx;
+		width: 157rpx;
+		font-size: 26rpx;
+		line-height: 88rpx;
+		text-align: center;
+		background-color: #EBF1FF;
+		border: none;
+	}
+
+</style>

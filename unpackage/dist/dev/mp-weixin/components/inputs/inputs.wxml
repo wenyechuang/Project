@@ -1,0 +1,1 @@
+<view class="Input"><input class="uni-input" placeholder="{{text}}"/><view class="{{['slotBox',(classFlag)?'inputActive':'']}}"><slot></slot></view></view>

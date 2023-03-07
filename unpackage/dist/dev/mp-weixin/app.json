@@ -1,8 +1,15 @@
 {
   "pages": [
+    "pages/login/login",
     "pages/transportationPlan/transportationPlan",
     "pages/Transport/Transport",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/appoint/appoint",
+    "pages/share/share",
+    "pages/home/home",
+    "pages/plan/plan",
+    "pages/waybill/waybill",
+    "pages/logs/logs/logs"
   ],
   "subPackages": [],
   "window": {
@@ -10,6 +17,36 @@
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#fff",
     "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#0982FA",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "/static/Main1.png",
+        "selectedIconPath": "/static/Main.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/plan/plan",
+        "iconPath": "/static/express.png",
+        "selectedIconPath": "/static/express1.png",
+        "text": "运输计划"
+      },
+      {
+        "pagePath": "pages/waybill/waybill",
+        "iconPath": "/static/Waybill.png",
+        "selectedIconPath": "/static/Waybill1.png",
+        "text": "运单"
+      },
+      {
+        "pagePath": "pages/logs/logs/logs",
+        "iconPath": "/static/My Center.png",
+        "selectedIconPath": "/static/My Center1.png",
+        "text": "个人中心"
+      }
+    ]
   },
   "usingComponents": {}
 }

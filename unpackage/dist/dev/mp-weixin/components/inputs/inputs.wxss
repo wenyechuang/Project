@@ -1,0 +1,29 @@
+
+.Input{
+		width: 690rpx;
+		height: 78rpx;
+		background: #FFFFFF;
+		border-radius: 4rpx 4rpx 4rpx 4rpx;
+		border: 1rpx solid #0982FA;
+		margin-top:20rpx;
+		margin-left: 25rpx;
+		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+}
+input{
+		font-size: 24rpx;
+		margin-left: 20rpx;
+}
+.slotBox{
+		width: 86rpx;
+		height:78rpx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+.inputActive{
+		background: #0982FA;
+}
+

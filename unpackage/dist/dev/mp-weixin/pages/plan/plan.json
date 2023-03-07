@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "运输计划",
+  "usingComponents": {
+    "plan": "/components/plan/plan"
+  }
+}

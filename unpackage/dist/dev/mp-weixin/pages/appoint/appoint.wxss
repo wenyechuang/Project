@@ -1,0 +1,17 @@
+
+page{
+	background: #F3F4F5;
+}
+.Slot{
+	font-size: 24rpx;
+	color: #666666;
+}
+.time1{
+	width: 36rpx;
+	height:36rpx
+}
+.search1{
+	width: 30rpx;
+	height:30rpx
+} 
+

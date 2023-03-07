@@ -1,0 +1,80 @@
+
+page{
+	background: #F3F4F5;
+	height: 1520rpx;
+}
+.Slot{
+	font-size: 24rpx;
+	color: #666666;
+}
+.time1{
+	width: 36rpx;
+	height:36rpx
+}
+.search1{
+	width: 30rpx;
+	height:30rpx
+}
+.box{
+	width: 659rpx;
+	height: 949rpx;
+	background: #FFFFFF;
+	margin: 43rpx 45rpx;
+}
+.boxHead{
+	width: 659rpx;
+	height:467rpx;
+	position: relative;
+}
+.Rectangle1{
+	width: 659rpx;
+	height:443rpx
+}
+.imgBox{
+	width: 368rpx;
+	height: 368rpx;
+	background: #FFFFFF;
+	border-radius: 20rpx 20rpx 20rpx 20rpx;
+	opacity: 1;
+	position: absolute;
+	left: 146rpx;
+	bottom: 0;
+}
+.information{
+	font-size: 30rpx;
+	color: #333333;
+	margin: 26rpx 60rpx;
+}
+.line{
+	width: 535rpx;
+	height: 1rpx;
+	background: #D9D9D9;
+	border-radius: 0rpx 0rpx 0rpx 0rpx;
+	opacity: 1;
+	margin: 30rpx 60rpx;
+}
+.informationBox{
+	display: flex;
+	justify-content: space-between;
+	margin: 34rpx 60rpx;
+}
+.informationContent{
+	font-size: 24rpx;
+	color: #0982FA;
+}
+button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30rpx;
+	color: #FFFFFF;
+	
+	width: 280rpx;
+	height: 86rpx;
+	background: #0982FA;
+	border-radius: 20rpx 20rpx 20rpx 20rpx;
+	opacity: 1;
+	/* margin: 55rpx 235rpx; */
+	/* margin-bottom: 24rpx; */
+}
+

@@ -1,12 +1,19 @@
 {
-	"pages": [//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
 		{
-		    "path" : "pages/transportationPlan/transportationPlan",
-		    "style" :                                                                                    
-		    {
-		        "navigationBarTitleText": "运输计划" 
-		    }
-		    
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+
+		},
+		{
+			"path": "pages/transportationPlan/transportationPlan",
+			"style": {
+				"navigationBarTitleText": "运输计划"
+			}
+
 		},
 		{
 			"path": "pages/Transport/Transport",
@@ -20,14 +27,6 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		},
-		
-		//运输计划页面
-		{
-			"path": "pages/plan/plan",
-			"style": {
-				"navigationBarTitleText": "运输计划"
-			}
-		},
 		//指派页面
 		{
 			"path": "pages/appoint/appoint",
@@ -36,7 +35,7 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, 
+		},
 		//分享页面
 		{
 			"path": "pages/share/share",
@@ -44,9 +43,69 @@
 				"navigationBarTitleText": "分享",
 				"enablePullDownRefresh": false
 			}
+		},
+
+
+		//tabBar
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": false
+			}
+		},
+		//运输计划页面
+		{
+			"path": "pages/plan/plan",
+			"style": {
+				"navigationBarTitleText": "运输计划"
+			}
+		},
+		{
+			"path": "pages/waybill/waybill",
+			"style": {
+				"navigationBarTitleText": "运单",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/logs/logs/logs",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
 		}
-	    
-    ],
+
+	],
+	"tabBar": { //底部
+	  "color": "#999999", //为选定的颜色
+	  "selectedColor": "#0982FA", //选定的颜色
+	  "list": [{
+	    "pagePath": "pages/home/home",
+	    "iconPath": "/static/Main1.png",
+	    "selectedIconPath": "/static/Main.png",
+	    "text": "首页"
+	   },
+	   {
+	    "pagePath": "pages/plan/plan",
+	    "iconPath": "/static/express.png",
+	    "selectedIconPath": "/static/express1.png",
+	    "text": "运输计划"
+	   },
+	   {
+	    "pagePath": "pages/waybill/waybill",
+	    "iconPath": "/static/Waybill.png",
+	    "selectedIconPath": "/static/Waybill1.png",
+	    "text": "运单"
+	   },
+	   {
+	    "pagePath": "pages/logs/logs/logs",
+	    "iconPath": "/static/My Center.png",
+	    "selectedIconPath": "/static/My Center1.png",
+	    "text": "个人中心"
+	   }
+	  ]
+	 },
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

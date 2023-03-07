@@ -1,0 +1,66 @@
+
+.lists {
+		/* position: absolute;
+ */
+		overflow: hidden;/*解决塌陷
+ */
+		
+		width: 690rpx;
+		height: 267rpx;
+		background: #FFFFFF;
+		margin: 30rpx;
+		border-radius: 20rpx;
+		margin-top: 20rpx;
+}
+.address {
+		font-size: 32rpx;
+		margin-top: 20rpx;
+		margin-left: 30rpx;
+}
+.content {
+		font-size: 24rpx;
+		color: #999999;
+		margin-top: 10rpx;
+		margin-left: 30rpx;
+}
+.progress-show {
+		display: flex;
+		font-size: 12rpx;
+		margin-top: 20rpx;
+		margin-left: 30rpx;
+}
+.progress {
+		width: 141rpx;
+		height: 21rpx;
+		background: #0982FA;
+		color: white;
+		border-radius: 10rpx;
+}
+.number {
+		color: #0982FA;
+		margin-left: 10rpx;
+}
+.line {
+		width: 630rpx;
+		height: 0.99rpx;
+		background: #D9D9D9;
+		margin-top: 20rpx;
+		margin-left: 30rpx;
+}
+.allBtn {
+		display: flex;
+}
+.btn {
+		width: 140rpx;
+		height: 56rpx;
+		background: #0982FA;
+		border-radius: 10rpx;
+		font-size: 24rpx;
+		color: #FFFFFF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20rpx;
+		margin-left: 30rpx;
+}
+

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "运单",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "en": "/components/en/en",
+    "confirmed": "/components/en/confirmed"
+  }
+}
