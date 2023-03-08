@@ -1,98 +1,106 @@
 <template>
-	<view class="Ayer">
-		<image class="Ayerwg" src="../../static/Rectangle.png"></image>
-		<image class="Ayerwhdd" src="../../static/logobai.png"></image>
-	<view class="Ayjgfr">	
-		<input type="text" class="ngdou" v-model="msagess">
-		<image class="inpon" src="../../static/inpon.png"></image>
-		<input type="text" class="hangdoulist" v-model="titems">
-			
-		<image class="noneke" src="../../static/fihfa.png"></image>
-	</view>
-	
-	<view class="tudous">
-		<button class="wewdgfyy" @click="handoulisit">立即登录</button>
-	</view>
-	<view class="tudu" >忘记密码？</view>
+	<view>
+		<view class="gduir">
+			<view class="gduir-box">
+			</view>
+			<view class="hangdoulisit">
+				<image src="../../static/logobai.png" style="width: 134rpx;height: 136rpx;margin: 94rpx 308rpx"></image>
+			</view>
+		</view>
+		<view class="input">
+			<view style="display: flex;justify-content: space-between;">
+				<input type="number" placeholder="请输入手机号" maxlength="11">
+
+				<image src="../../static/inpon.png" style="width: 40rpx;height: 40rpx;"></image>
+			</view>
+			<br style="width: 597rpx;height: 0rpx;opacity: 1;border: 1rpx solid #DBDBDB;">
+
+			<view style="display: flex;justify-content: space-between;">
+				<input class="input-box" type="password" placeholder="请输入密码" style="margin: 120rpx 0 0 0;">
+				<image src="../../static/fihfa.png" style="width: 40rpx;height: 40rpx;margin: 120rpx 0 0 0;"></image>
+			</view>
+			<br style="width: 597rpx;height: 0rpx;opacity: 1;border: 1rpx solid #DBDBDB;">
+			<navigator url="login.vue"
+				style="font-weight: 400;color: #878787;font-size: 20rpx;margin: 13rpx 0 0 497rpx;">
+				忘记密码？
+			</navigator>
+		</view>
+		<button class="tudus" @click="toIndex">立即登录</button>
 	</view>
 </template>
 
 <script>
+	import {
+		getLogin
+	} from "../../api/center.js";
+	import util from "../../utils/config.js";
 
 	export default {
 		data() {
 			return {
-				msagess:"请输入手机号",
-				titems:"请输入密码",
-			};
-		},
-		methods:{
-			handoulisit(){
-				uni.switchTab({
-					url: '../home/home'
-				});
+				data: {
+					username: '18000512601',
+					password: '12345678'
+				}
 			}
+		},
+		methods: {
+			// toIndex() {
+			// 	uni.switchTab({
+			// 		url: '../home/home'
+			// 	})
+			// },
+			async toIndex() {
+				let {
+					data
+				} = await getLogin(this.data)
+				uni.setStorageSync("token", data.token)
+				if (data.code == 200) {
+					uni.switchTab({
+						url: '../home/home'
+					})
+				} else {
+					console.log("error")
+				}
+
+			}
+		},
+		onLoad() {
+
 		}
 	}
-	
-	
 </script>
-<style lang="scss">
-	.Ayerwg{
-		width: 300pt;
-		height: 150pt;
-	}
-	.Ayerwhdd{
-		width: 100pt;
-		height: 100pt;
-		position: absolute;
-		top: 20pt;
-		left: 90pt;
-		background-color: #0982FA;
-	}
-	.Ayjgfr{
-		width: 200pt;
-		height: 80pt;
-		position: absolute;
-		top: 180pt;
-		left: 25pt;
-	}
-	.inpon{
-		width: 20pt;
-		height: 20pt;
-		position: absolute;
-		top: 0pt;
-		left: 200pt;
-	}
-	.noneke{
-		width: 20pt;
-		height: 20pt;
-		position: absolute;
-		top: 50pt;
-		left: 200pt;
-	}
-	.hangdoulist{
-		width: 200pt;
-		height: 20pt;
-		position: absolute;
-		top: 50pt;
-		left: 0pt;
-		
-	}.wewdgfyy{
-		width: 200pt;
-		height: 50pt;
-		position: absolute;
-		top: 325pt;
-		left: 30pt;
-		color: #fff;
-		background-color: #0982FA;
+<style lang="scss" scoped>
+	.gduir {
+		width: 750rpx;
+		height: 463rpx;
+		display: flex;
+		flex-direction: column;
+
+		.gduir-box {
+			width: 750rpx;
+			height: 80rpx;
+			background-color: #0982FA
+		}
+
+		.hangdoulisit {
+			width: 750rpx;
+			height: 383rpx;
+			background-image: url('../../static/Rectangle.png');
+			background-size: cover;
+		}
 	}
 
-	.tudu{
-		width: 500pt;
-		height: 14pt;
-		position: absolute;
-		top: 250pt;
-		left: 190pt;
+	.input {
+		margin: 198rpx 76rpx;
+		width: 596.5rpx;
+		height: 200rpx;
+	}
+
+	.tudus {
+		width: 200pt;
+		height: 35pt;
+		color: #fff;
+		background-color: #0982FA;
 	}
 </style>

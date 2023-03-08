@@ -13,5 +13,8 @@
 </script>
 
 <style>
-	/*每个页面公共css */
+	checkbox.ck[checked] .wx-checkbox-input,
+	checkbox.ck.checked .uni-checkbox-input{
+		background-color: #0982FA;
+	}
 </style>

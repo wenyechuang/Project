@@ -1,0 +1,499 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.hfut {
+  position: absolute;
+  top: 16pt;
+  left: 140pt;
+}
+.gdsd {
+  width: 50pt;
+  height: 50pt;
+  position: absolute;
+  top: 150pt;
+  left: 70pt;
+}
+.year {
+  width: 55.5pt;
+  height: 26pt;
+  position: absolute;
+  top: 25pt;
+  left: 25pt;
+}
+.uni-common-mt {
+  width: 250pt;
+  height: 150pt;
+}
+.uni-padding-wrap {
+  position: absolute;
+  top: 25pt;
+  left: 10pt;
+}
+.logo {
+  width: 375pt;
+  height: 1280px;
+  background-color: #0982FA;
+}
+.ban {
+  width: 260pt;
+  height: 281.5pt;
+  background-color: #fff;
+  position: absolute;
+  top: 58pt;
+  left: 10pt;
+  border-radius: 10pt;
+}
+.hangdouaubbi {
+  width: 100pt;
+  position: absolute;
+  top: 18pt;
+  left: 50pt;
+  color: #000000;
+}
+.hangdouzprre {
+  width: 1000pt;
+  position: absolute;
+  top: 35pt;
+  left: 50pt;
+  font-size: 8pt;
+  color: #0000FF;
+}
+.hangdouhudd {
+  width: 100pt;
+  position: absolute;
+  top: 70pt;
+  left: 130pt;
+  font-size: 8pt;
+}
+.hangdoupsud {
+  width: 100pt;
+  position: absolute;
+  top: 70pt;
+  left: 200pt;
+  font-size: 8pt;
+}
+.hangdoutabl_vh {
+  width: 17.5pt;
+  height: 9.5pt;
+  position: absolute;
+  top: 20pt;
+  left: 22pt;
+  background-color: #000000;
+}
+.Ayerw_vhu {
+  width: 255pt;
+  height: 200pt;
+  position: absolute;
+  top: 72pt;
+  left: 0pt;
+}
+.werh {
+  width: 260pt;
+  height: 135pt;
+  background-color: #fff;
+  border-radius: 10pt;
+  position: absolute;
+  top: 350pt;
+  left: 10pt;
+}
+.werh_h1 {
+  width: 260pt;
+  position: absolute;
+  top: 20pt;
+  left: 10pt;
+  color: #000000;
+}
+.werh_h2 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 15pt;
+  font-size: 20pt;
+  color: #0000FF;
+}
+.werh_h3 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 20pt;
+}
+.werh_h4 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 58pt;
+  color: ＃0000;
+}
+.werh_h5 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 100pt;
+  font-size: 8pt;
+}
+.werh_v5 {
+  width: 260pt;
+  position: absolute;
+  top: 50pt;
+  left: 100pt;
+  font-size: 15pt;
+}
+.werh_h6 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 100pt;
+  font-size: 10pt;
+}
+.werh_h7 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 135pt;
+}
+.werh_h8 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 180pt;
+  font-size: 8pt;
+}
+.werh_h9 {
+  width: 260pt;
+  position: absolute;
+  top: 50pt;
+  left: 180pt;
+  font-size: 15pt;
+}
+.werh_v1 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 180pt;
+  color: #000000;
+}
+.werh_v2 {
+  width: 260pt;
+  position: absolute;
+  left: 180pt;
+  top: 70pt;
+  left: 220pt;
+}
+.hand {
+  width: 260pt;
+  height: 135pt;
+  background-color: #fff;
+  border-radius: 10pt;
+  position: absolute;
+  top: 495pt;
+  left: 10pt;
+}
+.hand_h1 {
+  width: 260pt;
+  position: absolute;
+  top: 20pt;
+  left: 10pt;
+  color: #000000;
+}
+.hand_h2 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 15pt;
+  font-size: 20pt;
+  color: #0000FF;
+}
+.hand_h3 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 20pt;
+}
+.hand_h4 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 58pt;
+  color: ＃0000;
+}
+.hand_h5 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 100pt;
+  font-size: 8pt;
+}
+.hand_h6 {
+  width: 260pt;
+  position: absolute;
+  top: 52pt;
+  left: 100pt;
+  font-size: 15pt;
+}
+.hand_h7 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 100pt;
+}
+.hand_h8 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 140pt;
+}
+.hand_h9 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 180pt;
+  font-size: 8pt;
+}
+.hand_v1 {
+  width: 260pt;
+  position: absolute;
+  top: 52pt;
+  left: 180pt;
+}
+.hand_v2 {
+  width: 260pt;
+  position: absolute;
+  left: 180pt;
+  top: 70pt;
+  left: 180pt;
+}
+.hand_v3 {
+  width: 260pt;
+  position: absolute;
+  left: 180pt;
+  top: 70pt;
+  left: 215pt;
+}
+.hanglist {
+  width: 260pt;
+  height: 135pt;
+  background-color: #fff;
+  border-radius: 10pt;
+  position: absolute;
+  top: 640pt;
+  left: 10pt;
+}
+.hanglist_h1 {
+  width: 260pt;
+  position: absolute;
+  top: 20pt;
+  left: 10pt;
+  color: #000000;
+}
+.hanglist_h2 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 15pt;
+  font-size: 20pt;
+  color: #0000FF;
+}
+.hanglist_h3 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 20pt;
+}
+.hanglist_h4 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 58pt;
+  color: ＃0000;
+}
+.hanglist_h5 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 100pt;
+  font-size: 8pt;
+}
+.hanglist_h6 {
+  width: 260pt;
+  position: absolute;
+  top: 52pt;
+  left: 100pt;
+  font-size: 15pt;
+}
+.hanglist_h7 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 100pt;
+}
+.hanglist_h8 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 140pt;
+}
+.hanglist_h9 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 180pt;
+  font-size: 8pt;
+}
+.hanglist_v1 {
+  width: 260pt;
+  position: absolute;
+  top: 52pt;
+  left: 180pt;
+}
+.hanglist_v2 {
+  width: 260pt;
+  position: absolute;
+  left: 180pt;
+  top: 70pt;
+  left: 180pt;
+}
+.hanglist_v3 {
+  width: 260pt;
+  position: absolute;
+  left: 180pt;
+  top: 70pt;
+  left: 215pt;
+}
+.ydwu {
+  width: 55.5pt;
+  height: 26pt;
+  position: absolute;
+  top: 30pt;
+  left: 35pt;
+}
+.monthly {
+  width: 55.5pt;
+  height: 26pt;
+  position: absolute;
+  top: 30pt;
+  left: 125pt;
+}
+.Ayer {
+  width: 55.5pt;
+  height: 26pt;
+  position: absolute;
+  top: 30pt;
+  left: 200pt;
+}
+.ban {
+  width: 260pt;
+  height: 281.5pt;
+  background-color: #fff;
+  position: absolute;
+  top: 58pt;
+  left: 10pt;
+  border-radius: 10pt;
+}
+.hangdoutabl {
+  width: 17.5pt;
+  height: 9.5pt;
+  position: absolute;
+  top: 20pt;
+  left: 22pt;
+  background-color: #000000;
+}
+.hangdouaubbi {
+  width: 100pt;
+  position: absolute;
+  top: 18pt;
+  left: 50pt;
+  color: #000000;
+}
+.hangdouzprre {
+  width: 1000pt;
+  position: absolute;
+  top: 35pt;
+  left: 50pt;
+  font-size: 8pt;
+  color: #0000FF;
+}
+.Ayerw_h1 {
+  width: 110pt;
+  height: 125pt;
+  position: absolute;
+  top: 175pt;
+  left: 110pt;
+  font-size: 8pt;
+}
+.hangdou {
+  width: 260pt;
+  height: 135pt;
+  background-color: #fff;
+  border-radius: 10pt;
+  position: absolute;
+  top: 787pt;
+  left: 10pt;
+}
+.hangdou_h1 {
+  width: 17.5pt;
+  height: 9.5pt;
+  position: absolute;
+  top: 20pt;
+  left: 22pt;
+}
+.hangdou_h2 {
+  width: 260pt;
+  position: absolute;
+  top: 18pt;
+  left: 50pt;
+  font-size: 10pt;
+}
+.hangdou_h3 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 50pt;
+  font-size: 12pt;
+}
+.hangdou_h4 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 50pt;
+  font-size: 30pt;
+  color: #0982FA;
+}
+.hangdou_h5 {
+  width: 260pt;
+  position: absolute;
+  top: 40pt;
+  left: 165pt;
+  font-size: 12pt;
+}
+.hangdou_h6 {
+  width: 260pt;
+  position: absolute;
+  top: 70pt;
+  left: 175pt;
+  font-size: 30pt;
+  color: #FFDEAD;
+}
+

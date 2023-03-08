@@ -1,16 +1,18 @@
 <template>
 	<view class="lists">
-		<view class="address">成都双流-曲靖宣威</view>
-		<view class="content">砂石 袋装 500吨</view>
+		<view class="address">{{list.content1}}</view>
+		<view class="content">{{list.content2}}</view>
 		<view class="progress-show">
-			<view class="progress">已接单335吨</view>
-			<text class="number">45%</text>
+			<view class="progress">
+				<view class="progressText">{{list.content3a}}</view>
+			</view>
+			<text class="number">{{list.content3b}}</text>
 		</view>
 		<view class="line"></view>
 		<view class="allBtn">
-			<view class="btn">关闭</view>
+			<view class="btn" @click="close(list.id)">关闭</view>
 			<view class="btn">调度记录</view>
-			<view class="btn" @click="skip">指派</view>
+			<view class="btn" @click="appoint">指派</view>
 			<view class="btn" @click="share">分享</view>
 		</view>
 	</view>
@@ -20,11 +22,15 @@
 	export default {
 		data() {
 			return {
-				
+				flag:false
 			}
 		},
+		props:["list"],
 		methods: {
-			skip(){
+			close(id){
+				this.$emit("onClose",id)
+			},
+			appoint(){
 				uni.navigateTo({
 					url:"/pages/appoint/appoint"
 				})
@@ -33,7 +39,8 @@
 				uni.navigateTo({
 					url:"/pages/share/share"
 				})
-			}
+			},
+			
 		}
 	}
 </script>
@@ -69,6 +76,12 @@
 		font-size: 12rpx;
 		margin-top: 20rpx;
 		margin-left: 30rpx;
+		
+		width: 290rpx;
+		height: 21rpx;
+		background: #F8F8F8;
+		border-radius: 10rpx 10rpx 10rpx 10rpx;
+		opacity: 1;
 	}
 
 	.progress {
@@ -77,11 +90,21 @@
 		background: #0982FA;
 		color: white;
 		border-radius: 10rpx;
+		
+		display: flex;
+		align-items: center;
+	}
+
+	.progressText{
+		margin-left: 13rpx;
 	}
 
 	.number {
 		color: #0982FA;
 		margin-left: 10rpx;
+		
+		display: flex;
+		align-items: center;
 	}
 
 	.line {

@@ -3,7 +3,8 @@
 		<view class="box">
 			<view class="number">川A66666</view>
 			<view>
-				<image src="../../static/Rectangle 48.png" class="Rectangle"></image>
+				<!-- <image src="../../static/Rectangle 48.png" class="Rectangle"></image> -->
+				<checkbox class="ck" color="white"/>
 			</view>
 		</view>
 		<view class="line"></view>
@@ -24,17 +25,22 @@
 	export default {
 		data() {
 			return {
-				
+
 			}
 		},
 		methods: {
-			
+
 		}
 	}
 </script>
 
 <style>
-.driver{
+	.ck{
+		transform: scale(0.7);
+		border-radius: 4rpx;
+	}
+	
+	.driver {
 		width: 690rpx;
 		height: 285rpx;
 		background: #FFFFFF;
@@ -43,24 +49,28 @@
 		margin: 20rpx 25rpx;
 		overflow: hidden;
 	}
-	.box{
+
+	.box {
 		width: 625rpx;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin: 30rpx 25rpx;
 	}
-	.number{
-		width: 138rpx;
-		height:42rpx;
+
+	.number {
+		/* width: 138rpx; */
+		height: 42rpx;
 		font-size: 30rpx;
 		color: #333333;
 	}
-	.Rectangle{
+
+	.Rectangle {
 		width: 30rpx;
-		height:30rpx
+		height: 30rpx
 	}
-	.line{
+
+	.line {
 		width: 625rpx;
 		height: 1rpx;
 		background: #D9D9D9;
@@ -68,18 +78,21 @@
 		opacity: 1;
 		margin: 30rpx 25rpx;
 	}
-	.search{
+
+	.search {
 		/* width:96rpx; */
-		hieght:34rpx;
+		hieght: 34rpx;
 		font-size: 24rpx;
 		color: #999999;
 	}
-	.arrow-right{
+
+	.arrow-right {
 		width: 24rpx;
-		height:24rpx;
+		height: 24rpx;
 		margin-left: 3rpx;
 	}
-	.contact{
+
+	.contact {
 		margin: 34rpx 25rpx;
 	}
 </style>

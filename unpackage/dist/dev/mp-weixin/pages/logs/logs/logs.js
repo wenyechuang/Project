@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (global["webpackJsonp"] = global["webpackJsonp"] || []).push([["pages/logs/logs/logs"],{
 
 /***/ 104:
@@ -157,3 +158,6 @@ exports.default = _default;
 
 },[[104,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/logs/logs/logs.js.map
+=======
+Component({})
+>>>>>>> 05511a3b473d54b6e68c490c1a2acaaeaba74dad

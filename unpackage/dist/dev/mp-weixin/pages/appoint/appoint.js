@@ -101,10 +101,17 @@ var components
 try {
   components = {
     inputs: function () {
+<<<<<<< HEAD
       return __webpack_require__.e(/*! import() | components/inputs/inputs */ "components/inputs/inputs").then(__webpack_require__.bind(null, /*! @/components/inputs/inputs.vue */ 132))
     },
     card: function () {
       return __webpack_require__.e(/*! import() | components/card/card */ "components/card/card").then(__webpack_require__.bind(null, /*! @/components/card/card.vue */ 139))
+=======
+      return __webpack_require__.e(/*! import() | components/inputs/inputs */ "components/inputs/inputs").then(__webpack_require__.bind(null, /*! @/components/inputs/inputs.vue */ 126))
+    },
+    card: function () {
+      return __webpack_require__.e(/*! import() | components/card/card */ "components/card/card").then(__webpack_require__.bind(null, /*! @/components/card/card.vue */ 133))
+>>>>>>> 05511a3b473d54b6e68c490c1a2acaaeaba74dad
     },
   }
 } catch (e) {
