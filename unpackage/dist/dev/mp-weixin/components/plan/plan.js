@@ -146,8 +146,12 @@ var _default = {
       flag: false
     };
   },
+  props: ["list"],
   methods: {
-    skip: function skip() {
+    close: function close(id) {
+      this.$emit("onClose", id);
+    },
+    appoint: function appoint() {
       uni.navigateTo({
         url: "/pages/appoint/appoint"
       });
@@ -156,9 +160,6 @@ var _default = {
       uni.navigateTo({
         url: "/pages/share/share"
       });
-    },
-    close: function close(e) {
-      e.remove();
     }
   }
 };

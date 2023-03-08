@@ -186,12 +186,30 @@ var _default = {
     return {
       current: 1,
       activeColor: '#007aff',
-      styleType: 'button'
+      styleType: 'button',
+      lists: [{
+        id: "cd001",
+        content1: "成都双流-曲靖宣威",
+        content2: "砂石 袋装 500吨",
+        content3a: "已接单335吨",
+        content3b: "45%"
+      }, {
+        id: "cd002",
+        content1: "成都双流-曲靖宣威",
+        content2: "砂石 袋装 500吨",
+        content3a: "已接单335吨",
+        content3b: "45%"
+      }]
     };
   },
   methods: {
     changeNav: function changeNav(index) {
       this.current = index;
+    },
+    close: function close(id) {
+      this.lists = this.lists.filter(function (item) {
+        return item.id != id;
+      });
     }
   }
 };

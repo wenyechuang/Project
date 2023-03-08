@@ -30,13 +30,43 @@
 </template>
 
 <script>
+	import {
+		getLogin
+	} from "../../api/center.js";
+	import util from "../../utils/config.js";
+
 	export default {
-		methods: {
-			toIndex() {
-				uni.switchTab({
-					url: '../home/home'
-				})
+		data() {
+			return {
+				data: {
+					username: '18000512601',
+					password: '12345678'
+				}
 			}
+		},
+		methods: {
+			// toIndex() {
+			// 	uni.switchTab({
+			// 		url: '../home/home'
+			// 	})
+			// },
+			async toIndex() {
+				let {
+					data
+				} = await getLogin(this.data)
+				uni.setStorageSync("token", data.token)
+				if (data.code == 200) {
+					uni.switchTab({
+						url: '../home/home'
+					})
+				} else {
+					console.log("error")
+				}
+
+			}
+		},
+		onLoad() {
+
 		}
 	}
 </script>
@@ -47,17 +77,17 @@
 		display: flex;
 		flex-direction: column;
 
-	.gduir-box {
-		width: 750rpx;
-		height: 80rpx;
-		background-color: #0982FA
-	}
+		.gduir-box {
+			width: 750rpx;
+			height: 80rpx;
+			background-color: #0982FA
+		}
 
-	.hangdoulisit {
-		width: 750rpx;
-		height: 383rpx;
-		background-image: url('../../static/Rectangle.png');
-		background-size: cover;
+		.hangdoulisit {
+			width: 750rpx;
+			height: 383rpx;
+			background-image: url('../../static/Rectangle.png');
+			background-size: cover;
 		}
 	}
 
@@ -66,7 +96,8 @@
 		width: 596.5rpx;
 		height: 200rpx;
 	}
-	.tudus{
+
+	.tudus {
 		width: 200pt;
 		height: 35pt;
 		color: #fff;

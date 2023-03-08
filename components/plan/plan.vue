@@ -1,18 +1,18 @@
 <template>
 	<view class="lists">
-		<view class="address">成都双流-曲靖宣威</view>
-		<view class="content">砂石 袋装 500吨</view>
+		<view class="address">{{list.content1}}</view>
+		<view class="content">{{list.content2}}</view>
 		<view class="progress-show">
 			<view class="progress">
-				<view class="progressText">已接单335吨</view>
+				<view class="progressText">{{list.content3a}}</view>
 			</view>
-			<text class="number">45%</text>
+			<text class="number">{{list.content3b}}</text>
 		</view>
 		<view class="line"></view>
 		<view class="allBtn">
-			<view class="btn" @click="close">关闭</view>
+			<view class="btn" @click="close(list.id)">关闭</view>
 			<view class="btn">调度记录</view>
-			<view class="btn" @click="skip">指派</view>
+			<view class="btn" @click="appoint">指派</view>
 			<view class="btn" @click="share">分享</view>
 		</view>
 	</view>
@@ -25,8 +25,12 @@
 				flag:false
 			}
 		},
+		props:["list"],
 		methods: {
-			skip(){
+			close(id){
+				this.$emit("onClose",id)
+			},
+			appoint(){
 				uni.navigateTo({
 					url:"/pages/appoint/appoint"
 				})
@@ -36,9 +40,7 @@
 					url:"/pages/share/share"
 				})
 			},
-			close(e){
-				e.remove()
-			}
+			
 		}
 	}
 </script>

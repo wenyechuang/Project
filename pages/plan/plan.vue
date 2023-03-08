@@ -7,7 +7,7 @@
 		</view>
 		<view v-if="current === 1">添加计划</view>
 		<view v-if="current === 2">
-			<plan v-for="item in 2" :v-if="flag"></plan>
+			<plan v-for="item in lists" :list="item" @onClose="close">{{item.content1}}</plan>
 		</view>
 		<view v-if="current === 3">计划记录</view>
 	</view>
@@ -22,13 +22,30 @@
 				current: 1,
 				activeColor: '#007aff',
 				styleType: 'button',
+				
+				lists:[{
+					id:"cd001",
+					content1:"成都双流-曲靖宣威",
+					content2:"砂石 袋装 500吨",
+					content3a:"已接单335吨",
+					content3b:"45%",
+				},
+				{
+					id:"cd002",
+					content1:"成都双流-曲靖宣威",
+					content2:"砂石 袋装 500吨",
+					content3a:"已接单335吨",
+					content3b:"45%",
+				}]
 			}
 		},
 		methods: {
 			changeNav(index){
 				this.current=index
 			},
-			
+			close(id) {
+				this.lists=this.lists.filter((item)=>item.id!=id)
+			}
 		}
 	}
 </script>
