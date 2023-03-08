@@ -74,6 +74,13 @@
 				"navigationBarTitleText": "个人中心",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path": "pages/dispatchRecord/dispatchRecord",
+			"style": {
+				"navigationBarTitleText": "调度记录",
+				"enablePullDownRefresh": false
+			}
 		}
 
 	],
