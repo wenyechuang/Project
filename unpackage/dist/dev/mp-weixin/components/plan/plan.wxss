@@ -45,6 +45,9 @@
 		display: flex;
 		align-items: center;
 }
+.progressText{
+		margin-left: 13rpx;
+}
 .number {
 		color: #0982FA;
 		margin-left: 10rpx;

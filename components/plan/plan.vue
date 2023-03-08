@@ -3,7 +3,9 @@
 		<view class="address">成都双流-曲靖宣威</view>
 		<view class="content">砂石 袋装 500吨</view>
 		<view class="progress-show">
-			<view class="progress">已接单335吨</view>
+			<view class="progress">
+				<view class="progressText">已接单335吨</view>
+			</view>
 			<text class="number">45%</text>
 		</view>
 		<view class="line"></view>
@@ -89,6 +91,10 @@
 		
 		display: flex;
 		align-items: center;
+	}
+
+	.progressText{
+		margin-left: 13rpx;
 	}
 
 	.number {
