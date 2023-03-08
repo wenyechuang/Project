@@ -7,7 +7,7 @@
 		</view>
 		<view v-if="current === 1">添加计划</view>
 		<view v-if="current === 2">
-			<plan v-for="item in 2"></plan>
+			<plan v-for="item in 2" :v-if="flag"></plan>
 		</view>
 		<view v-if="current === 3">计划记录</view>
 	</view>

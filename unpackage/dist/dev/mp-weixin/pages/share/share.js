@@ -101,7 +101,7 @@ var components
 try {
   components = {
     inputs: function () {
-      return __webpack_require__.e(/*! import() | components/inputs/inputs */ "components/inputs/inputs").then(__webpack_require__.bind(null, /*! @/components/inputs/inputs.vue */ 102))
+      return __webpack_require__.e(/*! import() | components/inputs/inputs */ "components/inputs/inputs").then(__webpack_require__.bind(null, /*! @/components/inputs/inputs.vue */ 126))
     },
   }
 } catch (e) {

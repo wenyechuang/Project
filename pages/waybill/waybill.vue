@@ -194,4 +194,16 @@
 		height: 100vh;
 		background-color: #F3F4F5;
 	}
+	::v-deep uni-checkbox .uni-checkbox-input{
+		    margin-right: 5px;
+		    -webkit-appearance: none;
+		    appearance: none;
+		    outline: 0;
+		    border: 1px solid #d1d1d1;
+		    background-color: #fff;
+		    border-radius: 3px;
+		    width: 53px;
+		    height: 2px;
+		    position: relative;
+	}
 </style>

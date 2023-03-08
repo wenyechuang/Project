@@ -28,6 +28,12 @@
 		font-size: 12rpx;
 		margin-top: 20rpx;
 		margin-left: 30rpx;
+		
+		width: 290rpx;
+		height: 21rpx;
+		background: #F8F8F8;
+		border-radius: 10rpx 10rpx 10rpx 10rpx;
+		opacity: 1;
 }
 .progress {
 		width: 141rpx;
@@ -35,10 +41,16 @@
 		background: #0982FA;
 		color: white;
 		border-radius: 10rpx;
+		
+		display: flex;
+		align-items: center;
 }
 .number {
 		color: #0982FA;
 		margin-left: 10rpx;
+		
+		display: flex;
+		align-items: center;
 }
 .line {
 		width: 630rpx;

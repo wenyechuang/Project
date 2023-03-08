@@ -8,7 +8,7 @@
 		</view>
 		<view class="line"></view>
 		<view class="allBtn">
-			<view class="btn">关闭</view>
+			<view class="btn" @click="close">关闭</view>
 			<view class="btn">调度记录</view>
 			<view class="btn" @click="skip">指派</view>
 			<view class="btn" @click="share">分享</view>
@@ -20,7 +20,7 @@
 	export default {
 		data() {
 			return {
-				
+				flag:false
 			}
 		},
 		methods: {
@@ -33,6 +33,9 @@
 				uni.navigateTo({
 					url:"/pages/share/share"
 				})
+			},
+			close(e){
+				e.remove()
 			}
 		}
 	}
@@ -69,6 +72,12 @@
 		font-size: 12rpx;
 		margin-top: 20rpx;
 		margin-left: 30rpx;
+		
+		width: 290rpx;
+		height: 21rpx;
+		background: #F8F8F8;
+		border-radius: 10rpx 10rpx 10rpx 10rpx;
+		opacity: 1;
 	}
 
 	.progress {
@@ -77,11 +86,17 @@
 		background: #0982FA;
 		color: white;
 		border-radius: 10rpx;
+		
+		display: flex;
+		align-items: center;
 	}
 
 	.number {
 		color: #0982FA;
 		margin-left: 10rpx;
+		
+		display: flex;
+		align-items: center;
 	}
 
 	.line {
