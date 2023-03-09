@@ -57,17 +57,61 @@
 					<text>1598</text>
 					<text class="boxText6">元</text>
 				</view>
+				<view class="yunfei2" v-show="seen" @click="handzhankai">
+					<text class="yunfei4">展开</text>
+					<image class="yunfei3" src="../../static/向下.png" mode=""></image>
+				</view>
+				<view class="yunfei2" v-show="!seen" @click="handshouqi">
+					<text class="yunfei4">收起</text>
+					<image class="yunfei3" src="../../static/向上.png" mode=""></image>
+				</view>
+			</view>
+		</view>
+		<view :class= "seen?'xiangxiyingcang':'xiangxi'">
+			<view class="xiangxi1">
+				<text class="xiangxi3">应付运费</text>
+				<text class="xiangxi3">1400元</text>
+			</view>
+			<view class="xiangxi1">
+				<text class="xiangxi4">实际卸货吨数</text>
+				<text class="xiangxi4">34吨</text>
+			</view>
+			<view class="xiangxi1">
+				<text class="xiangxi4">实际卸货数量</text>
+				<text class="xiangxi4">34吨</text>
+			</view>
+			<view class="xiangxi1">
+				<text class="xiangxi4">货差</text>
+				<text class="xiangxi5">34吨</text>
+			</view>
+			<view class="xiangxi2">
 				
 			</view>
+			<view class="xiangxi1">
+				<text  class="xiangxi5">亏吨扣款</text>
+				<text  class="xiangxi5">90元</text>
+			</view>
+			<view class="xiangxi1">
+				<text  class="xiangxi5">扣款项一</text>
+				<text  class="xiangxi5">90元</text>
+			</view>
+			<view class="xiangxi1">
+				<text  class="xiangxi5">扣款项二</text>
+				<text  class="xiangxi5">90元</text>
+			</view>
+			
+			
 		</view>
 	</view>
 </template>
 <script>
+	
 	export default {
 		name: "waybillMap",
 		props: ["prop"],
 		data() {
 			return {
+				seen:true,
 				latitude: 30.60, // 初始纬度
 				longitude: 104.05, // 初始经度
 				markers: [{
@@ -142,6 +186,12 @@
 			})
 		},
 		methods: {
+			handshouqi(){
+			this.seen = true	
+			},
+			handzhankai(){
+				this.seen = false
+			},
 			handTran() {
 				uni.navigateTo({
 					url: '/pages/Transport/Transport'
@@ -157,6 +207,73 @@
 </script>
 
 <style lang="scss" scoped>
+	.xiangxi5{
+		font-size: 24rpx;
+		font-family: PingFang SC-Regular, PingFang SC;
+		font-weight: 400;
+		color: #EB1919;
+	}
+	.xiangxi4{
+		font-size: 24rpx;
+		font-family: PingFang SC-Regular, PingFang SC;
+		font-weight: 400;
+		color: #333333;
+	}
+	.xiangxi3{
+		font-size: 24rpx;
+		font-family: PingFang SC-Medium, PingFang SC;
+		font-weight: 500;
+		color: #000000;
+	}
+	.xiangxi2{
+		width: 633rpx;
+		border: #656565 1rpx solid;
+	}
+	.xiangxi1{
+		display: flex;
+		justify-content: space-between;
+	}
+	.xiangxi{
+		width: 675rpx;
+		height: 419rpx;
+		background: #F6F7F9;
+		border-radius: 10rpx 10rpx 10rpx 10rpx;
+		opacity: 1;
+		margin: 0 auto;
+		transform: translate(0,-360rpx);
+		padding: 18rpx;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.xiangxiyingcang{
+		width: 675rpx;
+		height: 419rpx;
+		background: #F6F7F9;
+		border-radius: 10rpx 10rpx 10rpx 10rpx;
+		opacity: 0;
+		margin: 0 auto;
+		transform: translate(0,-360rpx);
+		padding: 18rpx;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.yunfei2{
+		transform: translate(-60rpx,-20rpx);
+	}
+	.yunfei4{
+		width: 48rpx;
+		height: 34rpx;
+		font-size: 24rpx;
+		font-family: PingFang SC-Regular, PingFang SC;
+		font-weight: 400;
+		color: #999999;
+	}
+	.yunfei3{
+		width: 24rpx;
+		height: 24rpx;
+	}
 	.yunfei1 {
 		width: 171rpx;
 		height: 56rpx;
@@ -175,6 +292,9 @@
 		border-radius: 20rpx 20rpx 20rpx 20rpx;
 		opacity: 1;
 		padding: 17rpx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 
 	.boxText12 {

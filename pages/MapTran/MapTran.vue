@@ -1,12 +1,13 @@
 <template>
+	<waybillMap></waybillMap>
 	<!-- 这个页面是未确认页面 -->
-	<view class="">
+	<!-- <view class="">
 		<view style="width: 100%; height: 773rpx;background-color: aquamarine;">
 			
-		</view>
+		</view> -->
 	<!-- <map id="map" class="map" :include-points="points" style="width: 100%; height: 773rpx;" :markers="markers"
 		:polyline="polyline" :latitude="latitude" :longitude="longitude"></map> -->
-		<view class="hand">
+		<!-- <view class="hand">
 			<view class="hand1">
 				<text class="hand2">高启强</text> 
 				<text class="hand3">18888888888</text>
@@ -59,12 +60,16 @@
 				</view>
 			</view>
 		</view>
-		</view>
+		</view> -->
 </template>
 <script>
+	import waybillMap  from "@/pages/map/waybillMap.vue"
 	export default {
 		name: "waybillMap",
 		props:["prop"],
+		components:{
+			waybillMap
+		},
 		data() {
 			return {
 				latitude: 30.60, // 初始纬度

@@ -7,29 +7,48 @@
 		</view>
 		<view class="title-item">
 			<uni-list>
-				<uni-list-item title="运单编号" />
-				<uni-list-item title="货物名称" />
-				<uni-list-item title="规格类型" />
-				<uni-list-item title="单价" rightText="20元/吨" />
-				<uni-list-item title="司机名称" />
-				<uni-list-item title="联系方式" />
-				<uni-list-item title="车牌号" />
-				<uni-list-item title="装货重量" rightText="吨" />
-				<uni-list-item title="卸货重量" />
-				<uni-list-item title="发货地" />
-				<uni-list-item title="收货人" />
-				<uni-list-item title="联系方式" />
-				<uni-list-item title="收货地" />
-				<uni-list-item title="收货人" />
-				<uni-list-item title="联系方式" />
+				<uni-list-item title="运单编号" :rightText="twos.waybillNo" />
+				<uni-list-item title="货物名称" :rightText="twos.materialName"  />
+				<uni-list-item title="规格类型" :rightText="twos.materialSpec" />
+				<uni-list-item title="单价" :rightText="danjia"  />
+				<uni-list-item title="司机名称" :rightText="twos.driverName" />
+				<uni-list-item title="联系方式" :rightText="twos.driverPhone"  />
+				<uni-list-item title="车牌号" :rightText="twos.vehicleNumber"  />
+				<uni-list-item title="装货重量" :rightText="zhuang"  />
+				<uni-list-item title="卸货重量" :rightText="xie"  />
+				<uni-list-item title="发货地"  :rightText="twos.receiptName" />
+				<uni-list-item title="发货人"  :rightText="twos.receiptPeople" />
+				<uni-list-item title="联系方式"  :rightText="twos.receiptPhone" />
+				<uni-list-item title="收货地"  :rightText="twos.deliverName" />
+				<uni-list-item title="收货人"  :rightText="twos.deliverPeople" />
+				<uni-list-item title="联系方式" :rightText="twos.deliverPhone"  />
 			</uni-list>
 		</view>
 	</view>
 </template>
 
 <script>
+	import {Waybillmap} from "@/api/Waybillmap.js"
 	export default{
+		data(){
+			return{
+				twos:[],
+				danjia:'',
+				zhuang:'',
+				xie:'',
+			}
+		},
+		mounted(){
+			this.handtwos()
+		},
 		methods:{
+			async handtwos (){
+				let {data} = await Waybillmap()
+				this.twos = data.data
+				this.danjia = `${data.data.unitPrice}元`
+				this.zhuang = `${data.data.loadWeight}/吨`
+				this.xie = `${data.data.receiveWeight}/吨`
+			},
 			handyundan(){
 				uni.navigateTo({
 					url:'/pages/WaybillLog/WaybillLog'

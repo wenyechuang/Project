@@ -8,14 +8,14 @@
 		:polyline="polyline" :latitude="latitude" :longitude="longitude"></map> -->
 		<view class="hand">
 			<view class="hand1">
-				<text class="hand2">高启强</text> 
-				<text class="hand3">18888888888</text>
+				<text class="hand2">{{ones.driverName}}</text> 
+				<text class="hand3">{{ones.driverPhone}}</text>
 			</view>
-			<text class="hand4">川A66666</text>
+			<text class="hand4">{{ones.vehicleNumber}}</text>
 			<view class="hand1"> 
 				<image class="hand7" src="../../static/物流货物运输 1.png" mode=""></image>
-				<text class="hand5">水泥</text>
-				<text class="hand6">规格型号</text>
+				<text class="hand5">{{ones.materialName}}</text>
+				<text class="hand6">{{ones.materialSpec}}</text>
 			</view>
 			
 		</view>
@@ -29,16 +29,16 @@
 			</view>
 			<view class="">
 				<image class="boxText4" src="../../static/地点 1.png" mode=""></image>
-				<text class="boxText9">{{markers[0].callout.content}}</text>
+				<text class="boxText9">{{ones.receiptName}}</text>
 			</view>
-			<text class="boxText10">金创大道海运生物流园</text>
+			<text class="boxText10">{{ones.deliverName}}</text>
 			<view class="boxText8">
 				<view class="">
 					<view class="">
 						<image class="boxText4" src="../../static/地点 11.png" mode=""></image>
-						<text class="boxText9">{{markers[1].callout.content}}</text>
+						<text class="boxText9">{{ones.deliverName}}</text>
 					</view>
-					<text class="boxText10">金创大道海运生物流园</text>
+					<text class="boxText10">{{ones.customerName}}</text>
 				</view>
 				<view class="boxText5">
 					<view class="boxText7">
@@ -54,7 +54,7 @@
 			<view class="yunfei">
 				<view class="yunfei1">
 					<text class="boxText6">运费：</text>
-					<text>1598</text>
+					<text>{{ones.actualFreight}}</text>
 					<text class="boxText6">元</text>
 				</view>
 			</view>
@@ -62,11 +62,13 @@
 		</view>
 </template>
 <script>
+	import {Waybillmap} from '@/api/Waybillmap.js'
 	export default {
 		name: "waybillMap",
 		props:["prop"],
 		data() {
 			return {
+				ones:[],
 				latitude: 30.60, // 初始纬度
 				longitude: 104.05, // 初始经度
 				markers: [{
@@ -138,9 +140,16 @@
 					}
 					this.polyline[0].points = this.pl
 				}
-			})
+			}),
+			this.handBillMap()
 		},
 		methods:{
+				async handBillMap(){
+					let {data} = await Waybillmap ()
+					this.ones = data.data
+					console.log(this.ones)
+					
+				},
 			handTran(){
 				uni.navigateTo({
 					url: '/pages/Transport/Transport'
@@ -267,6 +276,9 @@
 		font-family: PingFang SC-Regular, PingFang SC;
 		font-weight: 400;
 		color: #FFFFFF;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 	.hand5{
 		width: 48rpx;
@@ -275,6 +287,9 @@
 		font-family: PingFang SC-Regular, PingFang SC;
 		font-weight: 400;
 		color: #FFFFFF;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 	.hand1{
 		display: flex;

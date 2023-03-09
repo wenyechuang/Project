@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "运输详情",
+  "usingComponents": {
+    "waybill-map": "/pages/map/waybillMap"
+  }
+}

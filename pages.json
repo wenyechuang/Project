@@ -1,12 +1,18 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		
 		{
 			"path": "pages/login/login",
 			"style": {
 				"navigationBarTitleText": "登录"
 			}
 
+		},
+		{
+			"path": "pages/MapTran/MapTran",
+			"style": {
+				"navigationBarTitleText": "运输详情"
+			}
+		
 		},
 		{
 			"path": "pages/transportationPlan/transportationPlan",
@@ -72,6 +78,35 @@
 			"path": "pages/logs/logs/logs",
 			"style": {
 				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+		
+			"path": "pages/MapWay/MapWay",
+			"style": {
+				"navigationBarTitleText": "运输详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/map/waybillMap",
+			"style": {
+				"navigationBarTitleText": "运输详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/WaybillLog/WaybillLog",
+			"style": {
+				"navigationBarTitleText": "运输详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/AbnormalRecord/AbnormalRecord",
+			"style": {
+				"navigationBarTitleText": "运输详情",
 				"enablePullDownRefresh": false
 			}
 		}

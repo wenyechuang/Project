@@ -5,25 +5,25 @@
 			<button class="box1">运单日志</button>
 			<button class="box2" @click="handyichang">异常记录</button>
 		</view>
-			<uni-card title="装货时间">
-				<text class="uni-body">装货单</text>
-				<view class="body1">
-					<view class="shangchuan">
-						
-					</view>
-					<view class="shangchuan shangchuan1">
-						
-					</view>
+		<uni-card title="装货时间">
+			<text class="uni-body">装货单</text>
+			<view class="body1">
+				<view class="shangchuan">
+
 				</view>
-			</uni-card>
-		<uni-card title="卸货时间" >
+				<view class="shangchuan shangchuan1">
+
+				</view>
+			</view>
+		</uni-card>
+		<uni-card title="卸货时间">
 			<text class="uni-body">卸货单</text>
 			<view class="body1">
 				<view class="shangchuan">
-					
+
 				</view>
 				<view class="shangchuan shangchuan1">
-					
+
 				</view>
 			</view>
 		</uni-card>
@@ -31,8 +31,28 @@
 </template>
 
 <script>
+	import {
+		WaybillLog
+	} from "@/api/Waybillmap.js"
 	export default {
+		data() {
+			return {
+				yun: {
+					waybillId: '6',
+					type: ''
+				}
+			}
+		},
+		mounted() {
+			this.handrizhidog()
+		},
+
 		methods: {
+			async handrizhidog() {
+				let {
+					data
+				} = await WaybillLog(this.yun)
+			},
 			handxiangqing() {
 				uni.navigateTo({
 					url: '/pages/Transport/Transport'
@@ -48,20 +68,23 @@
 </script>
 
 <style>
-	.body1{
+	.body1 {
 		display: flex;
 		justify-content: space-between;
 	}
-	.shangchuan1{
+
+	.shangchuan1 {
 		margin-left: 26rpx;
 	}
-	.shangchuan{
+
+	.shangchuan {
 		width: 304rpx;
 		height: 157rpx;
 		background: #D9D9D9;
 		border-radius: 0rpx 0rpx 0rpx 0rpx;
 		opacity: 1;
 	}
+
 	.nav {
 		width: 750rpx;
 		height: 1336rpx;
@@ -106,5 +129,4 @@
 		background: #EBF1FF;
 
 	}
-	
 </style>

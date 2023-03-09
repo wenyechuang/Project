@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/login/login",
+    "pages/MapTran/MapTran",
     "pages/transportationPlan/transportationPlan",
     "pages/Transport/Transport",
     "pages/index/index",
@@ -9,7 +10,11 @@
     "pages/home/home",
     "pages/plan/plan",
     "pages/waybill/waybill",
-    "pages/logs/logs/logs"
+    "pages/logs/logs/logs",
+    "pages/MapWay/MapWay",
+    "pages/map/waybillMap",
+    "pages/WaybillLog/WaybillLog",
+    "pages/AbnormalRecord/AbnormalRecord"
   ],
   "subPackages": [],
   "window": {
