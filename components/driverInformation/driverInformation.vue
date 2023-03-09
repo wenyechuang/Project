@@ -1,7 +1,8 @@
 <template>
+	<!-- 这个是调度记录 -->
 	<view class="">
 		<!-- 调度待确认 -->
-		<view class="box"  v-show="current=='0'" >
+		<view class="box" v-show="current==0">
 			<view class="driver-info">
 				<view class="driver">
 					<view class="name">
@@ -63,12 +64,12 @@
 				</view>
 			</view>
 
-			<button  class="confirm">确认</button>
+			<button class="confirm">确认</button>
 		</view>
 
 
 		<!-- 这里是司机待确认 -->
-		<view class="box" v-show="current=='1'" >
+		<view class="box" v-show="current==1">
 			<view class="driver-info">
 				<view class="driver">
 					<view class="name">
@@ -131,23 +132,49 @@
 </template>
 
 <script>
+	import {
+		getScheduling
+	} from "../../api/planRecord.js"
 	export default {
 		name: "Item",
-		props:{
-			current:{
-				type:[String,Number]
+		props: {
+			current: {
+				type: [String, Number]
 			}
 		},
 		data() {
 			return {
+				requestList: {
+					estimateLoadStart: '2022-12-03 00:00:00',
+					estimateLoadEnd: '2022-12-03 00:00:00',
+					transportPlanId: 0,
+					dispatchWeight: 0,
+					dispatchDetailParaList: [{
+						vehicleId: '1',
+						vehicleNumber: '0',
+						driverId: '0',
+						driverName: '0'
+					}]
+				}
 
 			};
 		},
-		
+		mounted() {
+			this.requestScheduling()
+		},
+		methods: {
+			async requestScheduling() {
+				let {
+					data
+				} = await getScheduling(this.requestList)
+				// console.log(data);
+			}
+		},
+
 	}
 </script>
 
-<style> 
+<style>
 	.box {
 		width: 100%;
 		height: 100%;
@@ -184,6 +211,16 @@
 		padding: 30rpx 0 0 25rpx;
 	}
 
+
+	.selection-box {
+		width: 30rpx;
+		height: 30rpx;
+		background: #006CFF;
+		border-radius: 4rpx 4rpx 4rpx 4rpx;
+		opacity: 1;
+	}
+
+
 	.time {
 		display: flex;
 		padding: 30rpx 0 0 25rpx;
@@ -199,11 +236,11 @@
 		margin: 25rpx 0 0 30rpx;
 	}
 
-	.yes-no { 
+	.yes-no {
 		padding: 20rpx 0 0 345rpx;
 		width: 300rpx;
 		height: 56rpx;
-		display: flex; 
+		display: flex;
 	}
 
 	.yes {
@@ -212,7 +249,7 @@
 		background: #0982FA;
 		border-radius: 10rpx 10rpx 10rpx 10rpx;
 		opacity: 1;
-		font-size: 24rpx ;
+		font-size: 24rpx;
 		color: #FFFFFF;
 	}
 
@@ -237,6 +274,7 @@
 		color: #333333;
 		text-align: center;
 	}
+
 	.dispatch-no {
 		margin: 20rpx 0 0 520rpx;
 		width: 140rpx;
@@ -282,7 +320,7 @@
 
 	.confirm {
 		position: fixed;
-		top: 974rpx;
+		bottom: 146rpx;
 		left: 235rpx;
 		width: 280rpx;
 		height: 86rpx;
@@ -291,16 +329,17 @@
 		text-align: center;
 		line-height: 86rpx;
 		opacity: 1;
-		 color: #FFFFFF;
+		color: #FFFFFF;
 
 	}
+
 	button::after {
-	border: none;
+		border: none;
 	}
-	
+
 	button[type=primary][plain] {
-	background-color: transparent;
-	border: none;
-	color: #333333;
+		background-color: transparent;
+		border: none;
+		color: #333333;
 	}
 </style>

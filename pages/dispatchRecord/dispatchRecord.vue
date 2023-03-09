@@ -1,8 +1,8 @@
 <template>
 	<view class="box">
-		<view class="choose" >
-			<view class="add-plan" :current="current" @clickItem="onClickItem">添加计划</view>
-			<view class="transportation-scheduling" :current="current" @clickItem="onClickItem">运输调度</view>
+		<view class="choose">
+			<view class="add-plan"  :class="{'navActive':current==0}" @click="onClickItem(0)">调度待确认</view>
+			<view class="transportation-scheduling" :class="{'navActive':current==1}" @click="onClickItem(1)">司机待确认</view>
 		</view>
 		<view class="content">
 			<view v-if="current == '0'">
@@ -14,42 +14,48 @@
 		</view>
 	</view>
 
-	<!-- <uni-section title="实心标签" type="line">
-			<view class="uni-padding-wrap uni-common-mt">
-				<uni-segmented-control :current="current" :values="items" :style-type="styleType"
-					:active-color="activeColor" @clickItem="onClickItem" />
-			</view>
-		
-		</uni-section> -->
-	</view>
+ 
 </template>
 
-<script>
-	export default {
+<script> 
+	import {getDispatchRecordList} from "../../api/planRecord.js"
+	export default { 
 		components: {},
 		data() {
-			return { 
-				current: 0, 
+			return {
+				current: 0,
+				activeColor: '#007aff',
+				styleType: 'button',
 
 			}
 		},
+		mounted(){
+			this.handleDispatchRecordList()
+		},
 		methods: {
-			onClickItem(e) {
-				if (this.current !== e.currentIndex) {
-					this.current = e.currentIndex
-				}
+			async handleDispatchRecordList(){
+				let {data}=await getDispatchRecordList()
+				console.log(data);
+			},
+			onClickItem(num) { 
+				this.current=num
 			},
 		}
 	}
 </script>
 
 <style>
+	.box{
+		background-color: #F3F4F5;
+		padding-top: 20rpx;
+	}
 	.choose {
 		margin: 0 auto;
 		width: 690rpx;
 		height: 88rpx;
 		background-color: #EBF1FF;
 		display: flex;
+		margin-top: 20rpx;
 	}
 
 	.add-plan {
@@ -138,5 +144,10 @@
 
 	.segmented-control__item {
 		border-color: transparent !important;
+	}
+	.navActive{
+		background: #0983FA;
+		color: #FFFFFF;
+		border-radius: 16rpx 16rpx 16rpx 16rpx;
 	}
 </style>

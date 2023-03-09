@@ -1,30 +1,30 @@
 <template>
 	<view class="">
-		<view class="info">
+		<view class="info" :data="categoryList">
 			<view class="route">
-				<view>成都</view>
+				<view>{{categoryList.deliverName}}</view>
 				<view>-</view>
-				<view>曲靖宣威</view>
+				<view>{{categoryList.receiptName}}</view>
 			</view>
 			<view class="concrete-object">
-				<span>砂石</span>
-				<span>袋装</span>
-				<span>550吨</span>
+				<span>{{categoryList.materialName}}</span>
+				<span class="materia">袋装</span>
+				<span class="number">{{categoryList.totalWeight}}吨</span>
 			</view>
 			<view class="line"></view>
 			<button class="dispatch-record" @click="handebtn">调度记录</button>
 
 		</view>
-		<view class="info">
+		<view class="info" :data="categoryList">
 			<view class="route">
-				<span>成都</span>
-				<span>-</span>
-				<span>曲靖宣威</span>
+				<view>{{categoryList.deliverName}}</view>
+				<view>-</view>
+				<view>{{categoryList.receiptName}}</view>
 			</view>
 			<view class="concrete-object">
-				<span>砂石</span>
-				<span>袋装</span>
-				<span>550吨</span>
+				<span>{{categoryList.materialName}}</span>
+				<span class="materia">袋装</span>
+				<span class="number">{{categoryList.totalWeight}}吨</span>
 			</view>
 			<view class="line"></view>
 			<button class="dispatch-record" @click="handebtn">调度记录</button>
@@ -33,20 +33,40 @@
 	</view>
 </template>
 
-<script>
+<script> 
+	import {getPlanRecord} from "../../api/planRecord.js"
+	import util from "../../utils/config.js";
 	export default {
 		name: "Item",
-		props: ["data"],
 		data() {
 			return {
+				categoryList:[],
+					
+				queryParams:{
+					
+				}
+				
+			
+
 
 			};
 		},
+		mounted(){
+			 
+			this.fn()
+		},
+
+		methods: {
+			 
+			async fn(){
+				let {data}= await getPlanRecord() 
+				console.log(data)
+				this.categoryList= data.data
+			},
 			
-		methods:{ 
-			handebtn(){
+			handebtn() {
 				uni.navigateTo({
-					url:"/pages/dispatchRecord/dispatchRecord"
+					url: "/pages/dispatchRecord/dispatchRecord"
 				})
 			}
 		}
@@ -61,12 +81,13 @@
 		background: #FFFFFF;
 		border-radius: 20rpx 20rpx 20rpx 20rpx;
 		opacity: 1;
+		margin-top: 20rpx;
 
 	}
 
 	.route {
 		display: flex;
-		width: 273rpx;
+		/* width: 273rpx; */
 		height: 45rpx;
 		font-size: 32rpx;
 		font-weight: 400;
@@ -77,14 +98,19 @@
 
 	.concrete-object {
 		margin: 10rpx 0rpx 0 30rpx;
-		width: 177rpx;
+		/* width: 177rpx; */
 		height: 34rpx;
 		font-size: 24rpx;
 		font-weight: 400;
 		color: #999999;
 		line-height: 28rpx;
-		display: flex;
-		justify-content: space-between;
+		display: flex; 
+	}
+	.materia{
+		padding-left: 20rpx ;
+	}
+	.number{
+		padding-left: 20rpx ;
 	}
 
 	.line {

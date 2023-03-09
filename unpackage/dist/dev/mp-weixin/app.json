@@ -1,13 +1,13 @@
 {
   "pages": [
     "pages/login/login",
+    "pages/plan/plan",
     "pages/transportationPlan/transportationPlan",
     "pages/Transport/Transport",
     "pages/index/index",
     "pages/appoint/appoint",
     "pages/share/share",
     "pages/home/home",
-    "pages/plan/plan",
     "pages/waybill/waybill",
     "pages/logs/logs/logs",
     "pages/dispatchRecord/dispatchRecord"

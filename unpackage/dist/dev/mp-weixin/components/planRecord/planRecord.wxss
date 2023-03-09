@@ -6,10 +6,11 @@
 	background: #FFFFFF;
 	border-radius: 20rpx 20rpx 20rpx 20rpx;
 	opacity: 1;
+	margin-top: 20rpx;
 }
 .route {
 	display: flex;
-	width: 273rpx;
+	/* width: 273rpx; */
 	height: 45rpx;
 	font-size: 32rpx;
 	font-weight: 400;
@@ -19,14 +20,19 @@
 }
 .concrete-object {
 	margin: 10rpx 0rpx 0 30rpx;
-	width: 177rpx;
+	/* width: 177rpx; */
 	height: 34rpx;
 	font-size: 24rpx;
 	font-weight: 400;
 	color: #999999;
 	line-height: 28rpx;
 	display: flex;
-	justify-content: space-between;
+}
+.materia{
+	padding-left: 20rpx ;
+}
+.number{
+	padding-left: 20rpx ;
 }
 .line {
 	width: 630rpx;

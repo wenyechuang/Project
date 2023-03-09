@@ -8,6 +8,13 @@
 			}
 
 		},
+		//运输计划页面
+		{
+			"path": "pages/plan/plan",
+			"style": {
+				"navigationBarTitleText": "运输计划"
+			}
+		},
 		{
 			"path": "pages/transportationPlan/transportationPlan",
 			"style": {
@@ -54,13 +61,7 @@
 				"enablePullDownRefresh": false
 			}
 		},
-		//运输计划页面
-		{
-			"path": "pages/plan/plan",
-			"style": {
-				"navigationBarTitleText": "运输计划"
-			}
-		},
+		
 		{
 			"path": "pages/waybill/waybill",
 			"style": {
