@@ -9,10 +9,10 @@
 			<text class="uni-body">装货单</text>
 			<view class="body1">
 				<view class="shangchuan">
-
+					<image :src="chu.photoUrl" mode="" class="shangchuan2"></image>
 				</view>
 				<view class="shangchuan shangchuan1">
-
+					<image :src="chu.photoUrl" mode="" class="shangchuan2"></image>
 				</view>
 			</view>
 		</uni-card>
@@ -20,10 +20,10 @@
 			<text class="uni-body">卸货单</text>
 			<view class="body1">
 				<view class="shangchuan">
-
+					<image :src="xiehuo.photoUrl" mode="" class="shangchuan2"></image>
 				</view>
 				<view class="shangchuan shangchuan1">
-
+					<image :src="xiehuo.photoUrl" mode="" class="shangchuan2"></image>
 				</view>
 			</view>
 		</uni-card>
@@ -38,9 +38,11 @@
 		data() {
 			return {
 				yun: {
-					waybillId: '6',
+					waybillId: '3',
 					type: ''
-				}
+				},
+				chu: [],
+				xiehuo: []
 			}
 		},
 		mounted() {
@@ -52,6 +54,8 @@
 				let {
 					data
 				} = await WaybillLog(this.yun)
+				this.chu = data.rows[0]
+				this.xiehuo = data.rows[1]
 			},
 			handxiangqing() {
 				uni.navigateTo({
@@ -68,6 +72,11 @@
 </script>
 
 <style>
+	.shangchuan2 {
+		width: 100%;
+		height: 100%;
+	}
+
 	.body1 {
 		display: flex;
 		justify-content: space-between;

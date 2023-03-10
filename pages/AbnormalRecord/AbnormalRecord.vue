@@ -6,18 +6,18 @@
 			<button class="box1">异常记录</button>
 		</view>
 		<view class="body">
-			<text class="body1">类型：车辆故障</text>
+			<text class="body1">类型：{{seen[0].questionType}}</text>
 			<text class="body1">内容描述</text>
 			<view class="body2">
-				<text>{{123}}</text>
+				<text>{{seen[0].question}}</text>
 			</view>
 			<text class="body1">照片</text>
 			<view class="body3">
 				<view class="shangchuan">
-					
+					<image :src="seen[0].photoUrl" mode="" class="shangchuan2"></image>
 				</view>
 				<view class="shangchuan shangchuan1">
-					
+					<image :src="seen[1].photoUrl" mode="" class="shangchuan2"></image>
 				</view>
 			</view>
 		</view>
@@ -25,8 +25,25 @@
 </template>
 
 <script>
+	import{Abnormal} from '@/api/Waybillmap.js'
 	export default{
+		data(){
+			return{
+				yi:{
+					waybillId:'1',
+					questionType:''
+				},
+				seen:[]
+			}
+		},
+		mounted(){
+			this.handyichang()
+		},
 		methods:{
+			async handyichang(){
+				let {data} = await Abnormal(this.yi)
+				this.seen = data.rows
+			},
 			handxiangqing(){
 				uni.navigateTo({
 					url:'/pages/Transport/Transport'
@@ -42,6 +59,10 @@
 </script>
 
 <style>
+	.shangchuan2{
+		width: 100%;
+		height: 100%;
+	}
 	.body3{
 		display: flex;
 		justify-content: space-between;

@@ -8,10 +8,10 @@
 		:polyline="polyline" :latitude="latitude" :longitude="longitude"></map> -->
 		<view class="hand">
 			<view class="hand1">
-				<text class="hand2">高启强</text>
-				<text class="hand3">18888888888</text>
+				<text class="hand2">{{fours.driverName}}</text>
+				<text class="hand3">{{fours.driverPhone}}</text>
 			</view>
-			<text class="hand4">川A66666</text>
+			<text class="hand4">{{fours.vehicleNumber}}</text>
 			<view class="hand1">
 				<image class="hand7" src="../../static/物流货物运输 1.png" mode=""></image>
 				<text class="hand5">水泥</text>
@@ -105,12 +105,13 @@
 	</view>
 </template>
 <script>
-	
+	import{Waybillmap} from "@/api/Waybillmap.js"
 	export default {
 		name: "waybillMap",
 		props: ["prop"],
 		data() {
 			return {
+				fours:[],
 				seen:true,
 				latitude: 30.60, // 初始纬度
 				longitude: 104.05, // 初始经度
@@ -183,9 +184,14 @@
 					}
 					this.polyline[0].points = this.pl
 				}
-			})
+			}),
+			this.hand()
 		},
 		methods: {
+			async hand (){
+				let {data} = await Waybillmap ()
+				this.fours = data.data
+			},
 			handshouqi(){
 			this.seen = true	
 			},

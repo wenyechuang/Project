@@ -2401,17 +2401,6 @@ module.exports = _toPropertyKey, module.exports.__esModule = true, module.export
 
 /***/ }),
 
-/***/ 115:
-/*!*******************************************************************!*\
-  !*** D:/所有的学习资料/uniapp课件/huozhuduankou/Project/static/sousuo.png ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAthJREFUSEu9l0+ITWEYxn+PLBCyIcoKC/mXYePfUjFlaiIZmQU27DQhCyOjZmoWMzWymtUoxCQkyhRLQimKGguyUZQFNWos1KdH35nO3Pvdcy73zpzVPed85/297/t97/O+VxRcIYS5wAFgL7ANWAksBH4BH4BXwBPgjiQ/q/tSamUIYR5wGjgDLKnD2legHxiu14EqcAhhNfAQWJsD/gBeAO+An9GZNcCuCsdeAwclfSxzdho4hLATGIvp9LfvgV5gVNLvSmMxM3uAHmBzfD8BtEp6VgSfAsdI3+SgNtaXAtZwoBs4n4O3FEX+Fxw9f57zukPSaFm6Eg50ADfj83FgS609z8CngKH4Qa+kC/8KzdaHEJypi/G+W1JfypZitJ+A5YBTvb3ek1mjIlyCb+Ph/A4sS22XwUeA69FIu6T7/xttLupO4Fq8T26bwSPAUcAls6KRaHNgR/0tltpVSccqgzHYadng2pXU1mi0OfijqHjjktalwJOAlWpIUlcTwQNR/SYkLU6BQ3zYI+lSE8HZ6Q6S5qTAVhoL/4Cks00EuzxdppOSFqTALnTr8pik1iaCHwD7XFqSNqXA+VO9tB6JLHMuasOXeKpHJB1PgQ8Bt+KLTkk3ygyXvQ8htAP3imy6nPI15260sZGoK3TfUa9KaUOm1e4qbn++GjrdIQTbsT1XS5eky0mt9sPopZt41vwPS8rSX5bZqfchhLxU2t6Owu4U4Z48vHhRtOSu4k5VOkvF7XI/zrqSTZyUNFzL69QEYqnL4O5WFhWXWpUDEege7NTmRyXzrIj7JXmiqbpqzVy3gZbcajeQp4BnKf+24KyPk2d+GLQmDAJXgPlF8KIp8wRwzh2rjk123zVw0JkJIXgcvlsET4IzUDx0nqt3A1sBT5ZuKJ40PwMv43DouXraMFgGLwTXEWnhkiL4jIJjtSTTPuPgGvC2WQEn4I9nDRzh/tdhoen/Ay6mLG0MP7AlAAAAAElFTkSuQmCC"
-
-/***/ }),
-
 /***/ 12:
 /*!*******************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/typeof.js ***!
@@ -2429,6 +2418,17 @@ function _typeof(obj) {
   }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(obj);
 }
 module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 122:
+/*!*******************************************************************!*\
+  !*** D:/所有的学习资料/uniapp课件/huozhuduankou/Project/static/sousuo.png ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAthJREFUSEu9l0+ITWEYxn+PLBCyIcoKC/mXYePfUjFlaiIZmQU27DQhCyOjZmoWMzWymtUoxCQkyhRLQimKGguyUZQFNWos1KdH35nO3Pvdcy73zpzVPed85/297/t97/O+VxRcIYS5wAFgL7ANWAksBH4BH4BXwBPgjiQ/q/tSamUIYR5wGjgDLKnD2legHxiu14EqcAhhNfAQWJsD/gBeAO+An9GZNcCuCsdeAwclfSxzdho4hLATGIvp9LfvgV5gVNLvSmMxM3uAHmBzfD8BtEp6VgSfAsdI3+SgNtaXAtZwoBs4n4O3FEX+Fxw9f57zukPSaFm6Eg50ADfj83FgS609z8CngKH4Qa+kC/8KzdaHEJypi/G+W1JfypZitJ+A5YBTvb3ek1mjIlyCb+Ph/A4sS22XwUeA69FIu6T7/xttLupO4Fq8T26bwSPAUcAls6KRaHNgR/0tltpVSccqgzHYadng2pXU1mi0OfijqHjjktalwJOAlWpIUlcTwQNR/SYkLU6BQ3zYI+lSE8HZ6Q6S5qTAVhoL/4Cks00EuzxdppOSFqTALnTr8pik1iaCHwD7XFqSNqXA+VO9tB6JLHMuasOXeKpHJB1PgQ8Bt+KLTkk3ygyXvQ8htAP3imy6nPI15260sZGoK3TfUa9KaUOm1e4qbn++GjrdIQTbsT1XS5eky0mt9sPopZt41vwPS8rSX5bZqfchhLxU2t6Owu4U4Z48vHhRtOSu4k5VOkvF7XI/zrqSTZyUNFzL69QEYqnL4O5WFhWXWpUDEege7NTmRyXzrIj7JXmiqbpqzVy3gZbcajeQp4BnKf+24KyPk2d+GLQmDAJXgPlF8KIp8wRwzh2rjk123zVw0JkJIXgcvlsET4IzUDx0nqt3A1sBT5ZuKJ40PwMv43DouXraMFgGLwTXEWnhkiL4jIJjtSTTPuPgGvC2WQEn4I9nDRzh/tdhoen/Ay6mLG0MP7AlAAAAAElFTkSuQmCC"
 
 /***/ }),
 
@@ -10448,25 +10448,7 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ 4:
-/*!**************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/slicedToArray.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles.js */ 5);
-var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit.js */ 6);
-var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 7);
-var nonIterableRest = __webpack_require__(/*! ./nonIterableRest.js */ 9);
-function _slicedToArray(arr, i) {
-  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
-}
-module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 46:
+/***/ 38:
 /*!************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/@babel/runtime/regenerator/index.js ***!
   \************************************************************************************************/
@@ -10475,12 +10457,12 @@ module.exports = _slicedToArray, module.exports.__esModule = true, module.export
 
 // TODO(Babel 8): Remove this file.
 
-var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 47)();
+var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 39)();
 module.exports = runtime;
 
 /***/ }),
 
-/***/ 47:
+/***/ 39:
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
   \*******************************************************************/
@@ -10802,7 +10784,25 @@ module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.e
 
 /***/ }),
 
-/***/ 48:
+/***/ 4:
+/*!**************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/slicedToArray.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayWithHoles = __webpack_require__(/*! ./arrayWithHoles.js */ 5);
+var iterableToArrayLimit = __webpack_require__(/*! ./iterableToArrayLimit.js */ 6);
+var unsupportedIterableToArray = __webpack_require__(/*! ./unsupportedIterableToArray.js */ 7);
+var nonIterableRest = __webpack_require__(/*! ./nonIterableRest.js */ 9);
+function _slicedToArray(arr, i) {
+  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
+}
+module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 40:
 /*!*****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
   \*****************************************************************/
@@ -10843,7 +10843,7 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 
 /***/ }),
 
-/***/ 49:
+/***/ 41:
 /*!***************************************************************!*\
   !*** D:/所有的学习资料/uniapp课件/huozhuduankou/Project/api/center.js ***!
   \***************************************************************/
@@ -10860,7 +10860,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.getInfo = getInfo;
 exports.getLogin = getLogin;
 exports.getPhoneNumber = getPhoneNumber;
-var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 50));
+var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 42));
 // 登录接口
 function getLogin(data) {
   return (0, _request.default)({
@@ -10893,21 +10893,7 @@ function getInfo(_ref2) {
 
 /***/ }),
 
-/***/ 5:
-/*!***************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 50:
+/***/ 42:
 /*!******************************************************************!*\
   !*** D:/所有的学习资料/uniapp课件/huozhuduankou/Project/utils/request.js ***!
   \******************************************************************/
@@ -10922,7 +10908,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = request;
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 51));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 43));
 function request(_ref) {
   var _ref$method = _ref.method,
     method = _ref$method === void 0 ? "GET" : _ref$method,
@@ -10966,7 +10952,7 @@ function request(_ref) {
 
 /***/ }),
 
-/***/ 51:
+/***/ 43:
 /*!*****************************************************************!*\
   !*** D:/所有的学习资料/uniapp课件/huozhuduankou/Project/utils/config.js ***!
   \*****************************************************************/
@@ -10985,6 +10971,66 @@ var _default = {
   appid: "wxede9e7ec3a4488f5"
 };
 exports.default = _default;
+
+/***/ }),
+
+/***/ 5:
+/*!***************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithHoles.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 57:
+/*!*******************************************************************!*\
+  !*** D:/所有的学习资料/uniapp课件/huozhuduankou/Project/api/Waybillmap.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Abnormal = Abnormal;
+exports.WaybillLog = WaybillLog;
+exports.Waybillmap = Waybillmap;
+var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 42));
+// 运单详情接口
+function Waybillmap(data) {
+  return (0, _request.default)({
+    url: "/customer-api/waybill/waybill/".concat(6),
+    method: 'get',
+    data: data
+  });
+}
+//运单日志
+function WaybillLog(data) {
+  return (0, _request.default)({
+    url: "/customer-api/waybill/log/list",
+    method: 'post',
+    data: data
+  });
+}
+
+//异常报备
+function Abnormal(data) {
+  return (0, _request.default)({
+    url: "/customer-api/waybill/report/list",
+    method: 'post',
+    data: data
+  });
+}
 
 /***/ }),
 
@@ -11025,42 +11071,6 @@ function _iterableToArrayLimit(arr, i) {
   }
 }
 module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 68:
-/*!*******************************************************************!*\
-  !*** D:/所有的学习资料/uniapp课件/huozhuduankou/Project/api/Waybillmap.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.WaybillLog = WaybillLog;
-exports.Waybillmap = Waybillmap;
-var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 50));
-// 运单详情接口
-function Waybillmap(data) {
-  return (0, _request.default)({
-    url: "/customer-api/waybill/waybill/".concat(6),
-    method: 'get',
-    data: data
-  });
-}
-//运单日志
-function WaybillLog(data) {
-  return (0, _request.default)({
-    url: "/customer-api/driver/waybill/waybillLogList",
-    method: 'post',
-    data: data
-  });
-}
 
 /***/ }),
 

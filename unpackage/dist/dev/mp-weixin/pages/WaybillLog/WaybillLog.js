@@ -165,9 +165,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 46));
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 48));
-var _Waybillmap = __webpack_require__(/*! @/api/Waybillmap.js */ 68);
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 38));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 40));
+var _Waybillmap = __webpack_require__(/*! @/api/Waybillmap.js */ 57);
 //
 //
 //
@@ -204,9 +204,11 @@ var _default = {
   data: function data() {
     return {
       yun: {
-        waybillId: '6',
+        waybillId: '3',
         type: ''
-      }
+      },
+      chu: [],
+      xiehuo: []
     };
   },
   mounted: function mounted() {
@@ -226,7 +228,9 @@ var _default = {
               case 2:
                 _yield$WaybillLog = _context.sent;
                 data = _yield$WaybillLog.data;
-              case 4:
+                _this.chu = data.rows[0];
+                _this.xiehuo = data.rows[1];
+              case 6:
               case "end":
                 return _context.stop();
             }

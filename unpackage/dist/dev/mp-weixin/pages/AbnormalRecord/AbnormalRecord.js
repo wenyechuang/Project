@@ -137,10 +137,14 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {
 
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 3);
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 38));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 40));
+var _Waybillmap = __webpack_require__(/*! @/api/Waybillmap.js */ 57);
 //
 //
 //
@@ -168,7 +172,41 @@ exports.default = void 0;
 //
 //
 var _default = {
+  data: function data() {
+    return {
+      yi: {
+        waybillId: '1',
+        questionType: ''
+      },
+      seen: []
+    };
+  },
+  mounted: function mounted() {
+    this.handyichang();
+  },
   methods: {
+    handyichang: function handyichang() {
+      var _this = this;
+      return (0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
+        var _yield$Abnormal, data;
+        return _regenerator.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return (0, _Waybillmap.Abnormal)(_this.yi);
+              case 2:
+                _yield$Abnormal = _context.sent;
+                data = _yield$Abnormal.data;
+                _this.seen = data.rows;
+              case 5:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    },
     handxiangqing: function handxiangqing() {
       uni.navigateTo({
         url: '/pages/Transport/Transport'

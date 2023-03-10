@@ -11,7 +11,16 @@ export function Waybillmap(data) {
 //运单日志
 export function WaybillLog(data) {
 	return requset({
-		url: `/customer-api/driver/waybill/waybillLogList`,
+		url: `/customer-api/waybill/log/list`,
+		method: 'post',
+		data
+	})
+}
+
+//异常报备
+export function Abnormal(data) {
+	return requset({
+		url: `/customer-api/waybill/report/list`,
 		method: 'post',
 		data
 	})

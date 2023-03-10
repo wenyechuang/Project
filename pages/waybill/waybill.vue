@@ -88,6 +88,9 @@
 		methods: {
 			changeNav(index) {
 				this.current = index
+				uni.navigateTo({
+					url: '/pages/MapWay/MapWay'
+				})
 			},
 			bindTimeChange(time) {
 				 this.time = time.detail.value
