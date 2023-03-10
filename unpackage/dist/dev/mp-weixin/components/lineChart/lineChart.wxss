@@ -1,0 +1,7 @@
+
+.chart {
+ margin: 23rpx auto;
+ width: 660rpx;
+ height: 440rpx;
+}
+
