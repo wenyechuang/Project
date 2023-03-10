@@ -1,0 +1,1 @@
+<view class="chart"><qiun-data-charts vue-id="755328ec-1" type="area" opts="{{opts}}" chartData="{{chartData}}" canvas2d="{{true}}" canvasId="DDsiMbIAJZQvzLRapuoKCVBlXmGUDsbi" bind:__l="__l"></qiun-data-charts></view>

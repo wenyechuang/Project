@@ -30,11 +30,9 @@
   left: 140pt;
 }
 .gdsd {
-  width: 50pt;
-  height: 50pt;
   position: absolute;
-  top: 150pt;
-  left: 70pt;
+  top: 50pt;
+  left: -20pt;
 }
 .year {
   width: 55.5pt;

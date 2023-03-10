@@ -6,7 +6,7 @@
 				<uni-segmented-control :current="current" :values="items" :style-type="styleType"
 					:active-color="activeColor" @clickItem="onClickItem" />
 			</view>
-			<image class="fhuig" src="../../static/hudf.png"></image>
+			<!-- <image class="fhuig" src="../../static/hudf.png"></image>
 			<view class="content">
 				<view v-if="current === 0">
 					<view class="ban">
@@ -76,9 +76,10 @@
 						<view class="hangdouaubbi">本年应付总金额</view>
 						<view class="hangdouzprre">本年应付总金额153万，已付100万，未付53万</view>
 						<image class="hangdoutabl" src="../../static/Group .png"></image>
-						<view class="gdsd"></view>
+						<view class="gdsd">
 							<ringChart></ringChart> 
-							<view class="hfut"><dates></dates></view>
+							</view>
+						<view class="hfut"><dates></dates></view>
 					</view>
 					<view class="werh">
 						<view class="werh_h1">本年运输计划数</view> 
@@ -137,9 +138,10 @@
 					<view class="hangdouaubbi">本年应付总金额</view>
 					<view class="hangdouzprre">本年应付总金额153万，已付100万，未付53万</view>
 					<image class="hangdoutabl" src="../../static/Group .png"></image>
-					<view class="gdsd"></view>
+					<view class="gdsd">
 						<ringChart></ringChart>
-						<view class="hfut"><dates></dates></view>
+						</view>
+					<view class="hfut"><dates></dates></view>
 				</view>
 				<view class="werh">
 					<view class="werh_h1">本年运输计划数</view>
@@ -191,7 +193,7 @@
 					<view class="hangdou_h5">司机拒绝接单数</view>
 					<view class="hangdou_h6">0</view>
 				</view>
-			</view>
+			</view> -->
 		</uni-section>
 
 
@@ -246,18 +248,16 @@
 
 
 <style lang="scss">
-	.hfut{ //插件年份
+	.hfut{ //折线图
 		position: absolute;
 		top: 16pt;
 		left: 140pt;
 	}
 	.gdsd {
 		//饼图
-		width: 50pt;
-		height: 50pt;
 		position: absolute;
-		top: 150pt;
-		left: 70pt;
+		top: 50pt;
+		left: -20pt;
 	}
 	.year {
 		width: 55.5pt;
