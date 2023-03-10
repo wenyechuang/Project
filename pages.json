@@ -7,6 +7,13 @@
 			}
 
 		},
+		//运输计划页面
+		{
+			"path": "pages/plan/plan",
+			"style": {
+				"navigationBarTitleText": "运输计划"
+			}
+		},
 		{
 			"path": "pages/transportationPlan/transportationPlan",
 			"style": {
@@ -53,13 +60,7 @@
 				"enablePullDownRefresh": false
 			}
 		},
-		//运输计划页面
-		{
-			"path": "pages/plan/plan",
-			"style": {
-				"navigationBarTitleText": "运输计划"
-			}
-		},
+		
 		{
 			"path": "pages/waybill/waybill",
 			"style": {
@@ -71,6 +72,13 @@
 			"path": "pages/logs/logs/logs",
 			"style": {
 				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/dispatchRecord/dispatchRecord",
+			"style": {
+				"navigationBarTitleText": "调度记录",
 				"enablePullDownRefresh": false
 			}
 		}

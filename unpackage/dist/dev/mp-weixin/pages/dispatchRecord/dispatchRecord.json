@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "调度记录",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "driver-information": "/components/driverInformation/driverInformation"
+  }
+}

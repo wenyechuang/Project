@@ -9,7 +9,7 @@
 		<view v-if="current === 2">
 			<plan v-for="item in lists" :list="item" @onClose="close">{{item.content1}}</plan>
 		</view>
-		<view v-if="current === 3">计划记录</view>
+		<view v-if="current === 3"><planRecord></planRecord></view>
 	</view>
 </template>
 

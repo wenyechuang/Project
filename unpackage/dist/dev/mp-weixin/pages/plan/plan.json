@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "运输计划",
   "usingComponents": {
-    "plan": "/components/plan/plan"
+    "plan": "/components/plan/plan",
+    "plan-record": "/components/planRecord/planRecord"
   }
 }

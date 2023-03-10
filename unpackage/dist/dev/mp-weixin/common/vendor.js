@@ -59,9 +59,15 @@ module.exports = _nonIterableRest, module.exports.__esModule = true, module.expo
 /***/ }),
 
 /***/ 107:
+<<<<<<< HEAD
 /*!****************************************************!*\
   !*** D:/成都可飞/23.3.4/aaa/Project/static/sousuo.png ***!
   \****************************************************/
+=======
+/*!****************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/Project/static/sousuo.png ***!
+  \****************************************************************/
+>>>>>>> 155ab2d1b6dae75d213978b38b8f5eea490c824d
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -109,6 +115,43 @@ function _toPropertyKey(arg) {
   return _typeof(key) === "symbol" ? key : String(key);
 }
 module.exports = _toPropertyKey, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 124:
+/*!****************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/Project/api/planRecord.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getDispatchRecordList = getDispatchRecordList;
+exports.getPlanRecord = getPlanRecord;
+var _request = _interopRequireDefault(__webpack_require__(/*! ../utils/request.js */ 43));
+// 计划记录
+function getPlanRecord(data) {
+  return (0, _request.default)({
+    url: "/customer-api/dispatch/transportPlan/".concat(5),
+    data: data,
+    method: "get"
+  });
+}
+
+// 查询调度记录列表
+function getDispatchRecordList(data) {
+  return (0, _request.default)({
+    url: "/customer-api/dispatch/planDispatch/list",
+    method: "post",
+    data: data
+  });
+}
 
 /***/ }),
 
@@ -240,10 +283,32 @@ module.exports = _toConsumableArray, module.exports.__esModule = true, module.ex
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 184:
 /*!**************************************************************************************!*\
   !*** D:/成都可飞/23.3.4/aaa/Project/uni_modules/uni-icons/components/uni-icons/icons.js ***!
   \**************************************************************************************/
+=======
+/***/ 19:
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayLikeToArray = __webpack_require__(/*! ./arrayLikeToArray.js */ 9);
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return arrayLikeToArray(arr);
+}
+module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ 195:
+/*!**************************************************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/Project/uni_modules/uni-icons/components/uni-icons/icons.js ***!
+  \**************************************************************************************************/
+>>>>>>> 155ab2d1b6dae75d213978b38b8f5eea490c824d
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1262,6 +1327,7 @@ exports.default = _default;
 
 /***/ }),
 
+<<<<<<< HEAD
 /***/ 19:
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
@@ -1277,6 +1343,8 @@ module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.ex
 
 /***/ }),
 
+=======
+>>>>>>> 155ab2d1b6dae75d213978b38b8f5eea490c824d
 /***/ 2:
 /*!************************************************************!*\
   !*** ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js ***!
@@ -10340,9 +10408,9 @@ internalMixin(Vue);
 /***/ }),
 
 /***/ 26:
-/*!*********************************************!*\
-  !*** D:/成都可飞/23.3.4/aaa/Project/pages.json ***!
-  \*********************************************/
+/*!*********************************************************!*\
+  !*** C:/Users/Administrator/Desktop/Project/pages.json ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -10907,9 +10975,15 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 /***/ }),
 
 /***/ 42:
+<<<<<<< HEAD
 /*!************************************************!*\
   !*** D:/成都可飞/23.3.4/aaa/Project/api/center.js ***!
   \************************************************/
+=======
+/*!************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/Project/api/center.js ***!
+  \************************************************************/
+>>>>>>> 155ab2d1b6dae75d213978b38b8f5eea490c824d
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10957,9 +11031,15 @@ function getInfo(_ref2) {
 /***/ }),
 
 /***/ 43:
+<<<<<<< HEAD
 /*!***************************************************!*\
   !*** D:/成都可飞/23.3.4/aaa/Project/utils/request.js ***!
   \***************************************************/
+=======
+/*!***************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/Project/utils/request.js ***!
+  \***************************************************************/
+>>>>>>> 155ab2d1b6dae75d213978b38b8f5eea490c824d
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11016,9 +11096,15 @@ function request(_ref) {
 /***/ }),
 
 /***/ 44:
+<<<<<<< HEAD
 /*!**************************************************!*\
   !*** D:/成都可飞/23.3.4/aaa/Project/utils/config.js ***!
   \**************************************************/
+=======
+/*!**************************************************************!*\
+  !*** C:/Users/Administrator/Desktop/Project/utils/config.js ***!
+  \**************************************************************/
+>>>>>>> 155ab2d1b6dae75d213978b38b8f5eea490c824d
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
